@@ -1,0 +1,55 @@
+/*Header*/
+#main-header{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  align-items: center;
+}
+#brand{
+  height: 150px;
+}
+#brand img{
+  height: 100%;
+}
+#main-nav{
+  display: flex;
+  gap: 30px;
+}
+#main-nav a{
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  padding: 10px;
+}
+#main-nav a:hover{
+  color: rgb(3, 152, 73);
+  border-bottom: 3px solid rgb(29, 74, 141);
+  letter-spacing: 2px;
+}
+
+
+@media (max-width: 700px) {
+  #main-header{
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 20px;
+  }
+
+  #navigation{
+    width: 100%;
+  }
+  #main-nav{
+    padding: 10px;
+    font-size: .8em;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  #main-nav a{
+    width: 100%;
+    display: inline-block;
+  }
+  #main-nav a:hover{
+    background-color: rgba(96, 94, 93, 0.263);
+  }
+}
